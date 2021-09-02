@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Memory Game</h1>
+        <div class="game">
+            <div class="card">
+                <div class="card__inner" data-span="cat">
+                    <div class="card__face card__face--front">
+                        <span><i class="far fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-cat"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="cat">
+                    <div class="card__face card__face--front">
+                        <span><i class="fas fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-cat"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="dove">
+                    <div class="card__face card__face--front">
+                        <span><i class="far fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-dove"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="dove">
+                    <div class="card__face card__face--front">
+                        <span>?</span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-dove"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="spider">
+                    <div class="card__face card__face--front">
+                        <span>?</span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-spider"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="spider">
+                    <div class="card__face card__face--front">
+                        <span><i class="fas fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-spider"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="frog">
+                    <div class="card__face card__face--front">
+                        <span>?</span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-frog"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="frog">
+                    <div class="card__face card__face--front">
+                        <span><i class="far fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-frog"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="bone">
+                    <div class="card__face card__face--front">
+                        <span>?</span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-bone"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="bone">
+                    <div class="card__face card__face--front">
+                        <span><i class="fas fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-bone"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="paw">
+                    <div class="card__face card__face--front">
+                        <span><i class="far fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-paw"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="paw">
+                    <div class="card__face card__face--front">
+                        <span><i class="fas fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-paw"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="carrot">
+                    <div class="card__face card__face--front">
+                        <span><i class="fas fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-carrot"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="carrot">
+                    <div class="card__face card__face--front">
+                        <span>?</span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-carrot"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="carrot">
+                    <div class="card__face card__face--front">
+                        <span>?</span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-fish"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner" data-span="carrot">
+                    <div class="card__face card__face--front">
+                        <span><i class="far fa-question-circle"></i></span>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <span><i class="fas fa-fish"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
