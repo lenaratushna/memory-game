@@ -1,4 +1,20 @@
 window.addEventListener('DOMContentLoaded', () => {
+    class AudioController {
+        constructor() {
+            this.matchSound = new Audio('Audio/match-sound.mp3');
+            this.victorySound = new Audio('Audio/victory.mp3');
+            this.gameOverSound = new Audio('Audio/game-over.mp3');
+        }
+        match() {
+            this.matchSound.play();
+        }
+        victory() {
+            this.victorySound.play();
+        }
+        gameOver() {
+            this.gameOverSound.play();
+        }
+    }
 
     class MemoryGame {
         constructor(totalTime, cards) {
@@ -7,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
             this.timeRemaining = totalTime;
             this.timer = document.getElementById('timer');
             this.flips = document.getElementById('flips');
+            this.audioController = new AudioController();
         }
     
         startGame() {
@@ -37,11 +54,13 @@ window.addEventListener('DOMContentLoaded', () => {
     
         gameOver() {
             clearInterval(this.countdown);
+            this.audioController.gameOver();
             document.getElementById('game-over').classList.add('visible');
         }
     
         gameVictory() {
             clearInterval(this.countdown);
+            this.audioController.victory();
             document.getElementById('victory').classList.add('visible');
         }
     
@@ -77,6 +96,7 @@ window.addEventListener('DOMContentLoaded', () => {
         cardMatch(card1, card2) {
             this.matchedCards.push(card1);
             this.matchedCards.push(card2);
+            this.audioController.match();
             if(this.matchedCards.length === this.cardsArray.length) {
                 this.gameVictory();
             }
